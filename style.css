@@ -1,0 +1,1812 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body{
+    overflow-x: hidden;
+    background: rgb(255, 227, 227);
+}
+
+nav{
+    height:10vh;
+    background: black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color:white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    color:white; 
+    margin-left:80px;
+    margin-right:20px;
+    font-size:1.3vw;
+    cursor: pointer;
+}
+
+nav img{
+    width:30px;
+    margin-right:10px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    color:white; 
+    gap:5px;
+    margin-left:200px;
+    margin-right:20px;
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+
+.home i{
+    color:white;
+    font-size:1.3vw;
+    margin-bottom:6px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    color:white;
+}
+
+.search input{
+    height:30px;
+    width:300px;
+    border-top-right-radius: none;
+    border-bottom-right-radius:none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border:none;
+    padding:10px;
+    outline: none;
+}
+
+.search i{
+    width:30px;
+    height:30px;
+    text-align: center;
+    background: white;
+    color:black;
+    padding:6px 2px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius:20px;
+    border-top-left-radius: none;
+    border-bottom-left-radius: none;  
+}
+
+.container{
+    height:510px;
+    width:70%;
+    color:white;
+    background:black;
+    margin:20px;
+    border-radius: 10px;
+    transform: translate(20%,0%);
+    padding:15px;
+}
+
+.listOfBhajans{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    height:440px;
+    transform: translate(10%,0%);
+}
+
+.listOfBhajans img {
+    width:170px;
+    border-radius: 50%;
+    box-shadow: 1px 0px 15px white;
+}
+
+.btn{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border: none;
+    background: #3AE176;
+    font-size: 1.2vw;
+    transform: translate(-90%,-60%);
+    cursor: pointer;
+    color:black;
+    text-align: center;
+    align-content: center;
+}
+
+.playPauseSection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:15vh;
+    background: black;
+}
+
+.playPauseSection input {
+    width:70%;
+    cursor: pointer;
+    outline: none;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    gap:10px;
+    bottom:0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.icons i{
+    font-size:2.2vw;
+}
+
+.nameOfSong{
+    display: flex;
+}
+
+.nameOfSong{
+    position: absolute;
+    top:55px;
+    left:230px;
+    color:white;
+    font-size: 1.7vw;
+    gap:10px;
+}
+
+#gif{
+    width:25px;
+    height:24px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+@media(max-width:1370px){
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:40px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    .container{
+        height:560px;
+        width:80%;
+        transform: translate(10%,0%);
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:440px;
+        transform: translate(8%,7%);
+    }
+    
+    .listOfBhajans img {
+        width:170px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        transform: translate(-90%,-60%);
+    }
+    .playPauseSection input {
+        width:80%;
+    }
+    .nameOfSong{
+        top:60px;
+        left:140px;
+        font-size: 2.6vw;
+    }
+    .icons i{
+        font-size:3.2vw;
+    }
+    #gif{
+        width:35px;
+        height:35px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+    }
+    
+}
+
+@media(max-width:1367px){
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:40px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    .container{
+        height:560px;
+        width:80%;
+        transform: translate(10%,0%);
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:440px;
+        transform: translate(8%,7%);
+    }
+    
+    .listOfBhajans img {
+        width:170px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        transform: translate(-90%,-60%);
+    }
+    .playPauseSection input {
+        width:80%;
+    }
+    .nameOfSong{
+        top:70px;
+        left:140px;
+        font-size: 2.6vw;
+    }
+    .icons i{
+        font-size:3.2vw;
+    }
+    #gif{
+        width:35px;
+        height:35px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+    }
+    
+}
+
+@media(max-width:1281px){
+    .container{
+        height:560px;
+        width:70%;
+        transform: translate(20%,0%);
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:440px;
+        transform: translate(8%,7%);
+    }
+    
+    .listOfBhajans img {
+        width:140px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        transform: translate(-90%,-60%);
+    }
+    .nameOfSong{
+        top:60px;
+        left:195px;
+        font-size: 1.6vw;
+    }
+    #gif{
+        width:25px;
+        height:18px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+    }
+    
+}
+
+@media(max-width:1181px){
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:30px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    .container{
+        height:560px;
+        width:80%;
+        transform: translate(10%,0%);
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:440px;
+        transform: translate(8%,7%);
+    }
+    
+    .listOfBhajans img {
+        width:135px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        transform: translate(-90%,-60%);
+    }
+    .playPauseSection input {
+        width:80%;
+    }
+    .nameOfSong{
+        top:55px;
+        left:120px;
+        font-size: 2.6vw;
+    }
+    .icons i{
+        font-size:3.2vw;
+    }
+    #gif{
+        width:35px;
+        height:28px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+    }
+    
+}
+
+@media(max-width:1025px){
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:40px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    .container{
+        height:560px;
+        width:80%;
+        transform: translate(10%,0%);
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:440px;
+        transform: translate(8%,7%);
+    }
+    
+    .listOfBhajans img {
+        width:135px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        transform: translate(-90%,-60%);
+    }
+    .playPauseSection input {
+        width:80%;
+    }
+    .nameOfSong{
+        top:55px;
+        left:105px;
+        font-size: 2.6vw;
+    }
+    .icons i{
+        font-size:3.2vw;
+    }
+    #gif{
+        width:25px;
+        height:25px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+    }
+    
+}
+
+@media(max-width:933px){
+
+    nav{
+        height: 15vh;
+
+    }
+
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:30px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    .container{
+        height:560px;
+        width:90%;
+        transform: translate(3%,0%);
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:440px;
+        transform: translate(8%,7%);
+    }
+    
+    .listOfBhajans img {
+        width:135px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        transform: translate(-90%,-60%);
+    }
+    .playPauseSection{
+        height:20vh;
+    }
+    .playPauseSection input {
+        width:80%;
+    }
+    .nameOfSong{
+        top:45px;
+        left:105px;
+        font-size: 2.6vw;
+    }
+    .icons i{
+        font-size:3.2vw;
+    }
+    #gif{
+        width:25px;
+        height:20px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in;
+    }
+}
+
+@media(max-width:913px){
+    
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:40px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:450px;
+        width:80%;
+        transform: translate(10%,0%);
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:380px;
+        transform: translate(8%,0%);
+    }
+    
+    .listOfBhajans img {
+        width:118px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        transform: translate(-90%,-60%);
+    }
+    .playPauseSection{
+        height:10vh;
+    }
+    .nameOfSong{
+        top:65px;
+        left:95px;
+        font-size: 2.4vw;
+    }
+    .icons i{
+        font-size:2.9vw;
+    }
+    #gif{
+        width:25px;
+        height:20px;
+    }
+    
+}
+
+@media(max-width:897px){
+    
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:30px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:450px;
+        width:90%;
+        transform: translate(3%,0%);
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:380px;
+        transform: translate(8%,0%);
+    }
+    
+    .listOfBhajans img {
+        width:118px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        transform: translate(-90%,-60%);
+    }
+    .playPauseSection{
+        height:20vh;
+    }
+    .nameOfSong{
+        top:40px;
+        left:95px;
+        font-size: 2.4vw;
+    }
+    .icons i{
+        font-size:2.9vw;
+    }
+    #gif{
+        width:25px;
+        height:19px;
+    }
+    
+}
+
+@media(max-width:854px){
+    
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:40px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:460px;
+        width:80%;
+        transform: translate(10%,0%);
+    }
+    
+    .listOfBhajans{
+        width:100%;
+        height:380px;
+        transform: translate(2%,0%);
+    }
+    
+    .listOfBhajans img {
+        width:118px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+    }
+    .playPauseSection{
+        height:10vh;
+    }
+    .nameOfSong{
+        top:65px;
+        left:90px;
+        font-size: 2.4vw;
+    }
+    .icons i{
+        font-size:2.9vw;
+    }
+    #gif{
+        width:25px;
+        height:20px;
+    }
+    
+}
+
+@media(max-width:845px){
+    
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:30px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:460px;
+        width:80%;
+        transform: translate(10%,0%);
+    }
+    
+    .listOfBhajans{
+        width:100%;
+        height:380px;
+        transform: translate(2%,0%);
+    }
+    
+    .listOfBhajans img {
+        width:118px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+    }
+    .playPauseSection{
+        height:20vh;
+    }
+    .nameOfSong{
+        top:40px;
+        left:90px;
+        font-size: 2.4vw;
+    }
+    .icons i{
+        font-size:2.9vw;
+    }
+    #gif{
+        width:25px;
+        height:18px;
+    }
+    
+}
+
+@media(max-width:821px){
+    
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:40px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:460px;
+        width:90%;
+        transform: translate(3%,0%);
+    }
+    
+    .listOfBhajans{
+        width:100%;
+        height:380px;
+        transform: translate(2%,0%);
+    }
+    
+    .listOfBhajans img {
+        width:118px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+    }
+    .playPauseSection{
+        height:10vh;
+    }
+    .nameOfSong{
+        top:60px;
+        left:90px;
+        font-size: 2.4vw;
+    }
+    .icons i{
+        font-size:3.0vw;
+    }
+    #gif{
+        width:25px;
+        height:18px;
+    }
+    
+}
+
+@media(max-width:769px){
+    
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:40px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:460px;
+        width:90%;
+        transform: translate(3%,0%);
+    }
+    
+    .listOfBhajans{
+        width:100%;
+        height:380px;
+        transform: translate(2%,0%);
+    }
+    
+    .listOfBhajans img {
+        width:118px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+    }
+    .playPauseSection{
+        height:10vh;
+    }
+    .nameOfSong{
+        top:55px;
+        left:80px;
+        font-size: 2.4vw;
+    }
+    .icons i{
+        font-size:3.0vw;
+    }
+    #gif{
+        width:25px;
+        height:17px;
+    }
+    
+}
+
+@media(max-width:741px){
+    
+    .logo{
+        margin-left:40px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:30px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:100px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:300px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:460px;
+        width:90%;
+        transform: translate(3%,0%);
+    }
+    
+    .listOfBhajans{
+        width:100%;
+        height:380px;
+        transform: translate(2%,0%);
+    }
+    
+    .listOfBhajans img {
+        width:118px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        font-size: 2.0vw;
+    }
+    .playPauseSection{
+        height:20vh;
+    }
+    .nameOfSong{
+        top:37px;
+        left:80px;
+        font-size: 2.4vw;
+    }
+    .icons i{
+        font-size:3.0vw;
+    }
+    #gif{
+        width:25px;
+        height:16px;
+    }
+    
+}
+
+@media(max-width:721px){
+    
+    .logo{
+        margin-left:50px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:20px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:120px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:250px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:460px;
+        width:90%;
+        transform: translate(3%,0%);
+        font-size: 2.0vw;
+    }
+    
+    .listOfBhajans{
+        width:100%;
+        height:380px;
+        transform: translate(2%,5%);
+    }
+    
+    .listOfBhajans img {
+        width:108px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+    }
+    .playPauseSection{
+        height:15vh;
+    }
+    .nameOfSong{
+        top:40px;
+        left:75px;
+        font-size: 2.4vw;
+    }
+    .icons i{
+        font-size:3.5vw;
+    }
+    #gif{
+        width:25px;
+        height:16px;
+    }
+    
+}
+
+@media(max-width:668px){
+    
+    .logo{
+        margin-left:50px;
+        margin-right:10px;
+        font-size:2.3vw;
+    }
+    
+    nav img{
+        width:20px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:50px;
+        margin-right:20px;
+        font-size: 2.3vw;
+    }
+    
+    .home i{
+        font-size:2.3vw;
+        margin:0;
+    }
+        
+    .search input{
+        height:30px;
+        width:250px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:460px;
+        width:90%;
+        transform: translate(2%,0%);
+        font-size: 2.0vw;
+    }
+    
+    .listOfBhajans{
+        width:100%;
+        height:380px;
+        transform: translate(2%,5%);
+    }
+    
+    .listOfBhajans img {
+        width:108px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        font-size:2.0vw
+    }
+    .playPauseSection{
+        height:15vh;
+    }
+    .nameOfSong{
+        top:30px;
+        left:75px;
+        font-size: 2.4vw;
+    }
+    .icons i{
+        font-size:3.5vw;
+    }
+    #gif{
+        width:25px;
+        height:14px;
+    }
+    
+}
+
+@media(max-width:541px){
+    
+    .logo{
+        margin-left:20px;
+        margin-right:10px;
+        font-size:3.3vw;
+    }
+    
+    nav img{
+        width:30px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:20px;
+        margin-right:20px;
+        font-size: 3.3vw;
+    }
+    
+    .home i{
+        font-size:3.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:250px;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:460px;
+        width:90%;
+        transform: translate(3%,0%);
+        font-size: 2.0vw;
+    }
+    
+    .listOfBhajans{
+        width:100%;
+        height:380px;
+        transform: translate(2%,5%);
+    }
+    
+    .listOfBhajans img {
+        width:108px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+    }
+    .playPauseSection{
+        height:10vh;
+    }
+    .nameOfSong{
+        top:40px;
+        left:57px;
+        font-size: 2.4vw;
+    }
+    .icons i{
+        font-size:3.5vw;
+    }
+    #gif{
+        width:25px;
+        height:11px;
+    }
+    
+}
+
+@media(max-width:431px){
+    
+    .logo{
+        margin-left:20px;
+        margin-right:10px;
+        font-size:3.3vw;
+    }
+    
+    nav img{
+        width:20px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:10px;
+        margin-right:20px;
+        font-size: 3.3vw;
+    }
+    
+    .home i{
+        font-size:3.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:180px;
+        font-size:2.5vw;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:560px;
+        width:90%;
+        transform: translate(0%,0%);
+        font-size: 2.0vw;
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:380px;
+        transform: translate(10%,5%);
+    }
+    
+    .listOfBhajans img {
+        width:108px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        font-size: 2.8vw;
+    }
+    .playPauseSection{
+        height:10vh;
+    }
+    .nameOfSong{
+        top:10px;
+        left:140px;
+        font-size: 3.1vw;
+    }
+    .icons i{
+        font-size:3.5vw;
+    }
+    #gif{
+        width:25px;
+        height:11px;
+    }
+    
+}
+
+@media(max-width:415px){
+    nav{
+        height:10vh;
+    }
+    
+    .logo{
+        margin-left:20px;
+        margin-right:10px;
+        font-size:3.3vw;
+    }
+    
+    nav img{
+        width:20px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:10px;
+        margin-right:20px;
+        font-size: 3.3vw;
+    }
+    
+    .home i{
+        font-size:3.3vw;
+    }
+        
+    .search input{
+        height:30px;
+        width:180px;
+        font-size:2.5vw;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:560px;
+        width:90%;
+        transform: translate(0%,0%);
+        font-size: 2.0vw;
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:380px;
+        transform: translate(10%,5%);
+    }
+    
+    .listOfBhajans img {
+        width:108px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        font-size: 2.8vw;
+    }
+    .playPauseSection{
+        height:10vh;
+    }
+    .nameOfSong{
+        top:10px;
+        left:140px;
+        font-size: 3.1vw;
+    }
+    .icons i{
+        font-size:3.5vw;
+    }
+    #gif{
+        width:25px;
+        height:11px;
+    }
+    
+}
+
+@media(max-width:391px){
+    nav{
+        height:10vh;
+    }
+    
+    .logo{
+        margin-left:20px;
+        margin-right:10px;
+        font-size:3.3vw;
+    }
+    
+    nav img{
+        width:20px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:10px;
+        margin-right:20px;
+        font-size: 3.3vw;
+    }
+    
+    .home i{
+        font-size:3.3vw;
+        margin:0;
+    }
+        
+    .search input{
+        height:30px;
+        width:150px;
+        font-size:2.5vw;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:560px;
+        width:90%;
+        transform: translate(0%,0%);
+        font-size: 2.0vw;
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:500px;
+        transform: translate(10%,5%);
+    }
+
+    .bhajans{
+        gap:15px;
+    }
+    
+    .listOfBhajans img {
+        width:100px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        font-size: 2.8vw;
+    }
+    .playPauseSection{
+        height:13vh;
+    }
+    .nameOfSong{
+        top:5px;
+        left:130px;
+        font-size: 4.1vw;
+    }
+    .icons i{
+        font-size:5.0vw;
+    }
+    #gif{
+        width:25px;
+        height:13px;
+    }
+    
+}
+
+@media(max-width:376px){
+    nav{
+        height:10vh;
+    }
+    
+    .logo{
+        margin-left:20px;
+        margin-right:10px;
+        font-size:3.3vw;
+    }
+    
+    nav img{
+        width:20px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:10px;
+        margin-right:20px;
+        font-size: 3.3vw;
+    }
+    
+    .home i{
+        font-size:3.3vw;
+        margin:0;
+    }
+        
+    .search input{
+        height:30px;
+        width:150px;
+        font-size:2.5vw;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:560px;
+        width:90%;
+        transform: translate(0%,0%);
+        font-size: 2.0vw;
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:500px;
+        transform: translate(10%,5%);
+    }
+
+    .bhajans{
+        gap:15px;
+    }
+    
+    .listOfBhajans img {
+        width:100px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        font-size: 2.8vw;
+    }
+    .playPauseSection{
+        height:13vh;
+    }
+    .nameOfSong{
+        top:5px;
+        left:130px;
+        font-size: 4.1vw;
+    }
+    .icons i{
+        font-size:5.0vw;
+    }
+    #gif{
+        width:25px;
+        height:13px;
+    }
+    
+}
+
+@media(max-width:361px){
+    nav{
+        height:10vh;
+    }
+    
+    .logo{
+        margin-left:20px;
+        margin-right:10px;
+        font-size:3.3vw;
+    }
+    
+    nav img{
+        width:20px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:10px;
+        margin-right:20px;
+        font-size: 3.3vw;
+    }
+    
+    .home i{
+        font-size:3.3vw;
+        margin:0;
+    }
+        
+    .search input{
+        height:30px;
+        width:140px;
+        font-size:2.5vw;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:560px;
+        width:95%;
+        transform: translate(-3%,0%);
+        font-size: 2.0vw;
+    }
+    
+    .listOfBhajans{
+        width:90%;
+        height:500px;
+        transform: translate(10%,5%);
+    }
+
+    .bhajans{
+        gap:15px;
+    }
+    
+    .listOfBhajans img {
+        width:100px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        font-size: 2.8vw;
+    }
+    .playPauseSection{
+        height:13vh;
+    }
+    .nameOfSong{
+        top:5px;
+        left:125px;
+        font-size: 4.1vw;
+    }
+    .icons i{
+        font-size:5.0vw;
+    }
+    #gif{
+        width:25px;
+        height:13px;
+    }
+    
+}
+
+@media(max-width:345px){
+    nav{
+        height:10vh;
+    }
+    
+    .logo{
+        margin-left:20px;
+        margin-right:10px;
+        font-size:3.3vw;
+    }
+    
+    nav img{
+        width:20px;
+        margin-right:10px;
+    }
+    
+    .home{
+        margin-left:10px;
+        margin-right:20px;
+        font-size: 3.3vw;
+    }
+    
+    .home i{
+        font-size:3.3vw;
+        margin:0;
+    }
+        
+    .search input{
+        height:30px;
+        width:120px;
+        font-size:2.1vw;
+    }
+    
+    .search i{
+        width:30px;
+        height:30px;
+        padding:6px 2px;
+    }
+    
+    .container{
+        height:560px;
+        width:95%;
+        transform: translate(-4%,0%);
+        font-size: 2.0vw;
+    }
+    
+    .listOfBhajans{
+        width:100%;
+        height:500px;
+        transform: translate(6%,5%);
+    }
+
+    .bhajans{
+        gap:15px;
+    }
+    
+    .listOfBhajans img {
+        width:100px;
+    }
+    
+    .btn{
+        width:35px;
+        height:35px;
+        font-size: 2.8vw;
+    }
+    .playPauseSection{
+        height:13vh;
+    }
+    .nameOfSong{
+        top:10px;
+        left:115px;
+        font-size: 4.1vw;
+    }
+    .icons i{
+        font-size:5.0vw;
+    }
+    #gif{
+        width:25px;
+        height:13px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

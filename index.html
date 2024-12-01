@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Spotify_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="Spotify_logo.png" alt="Spotify_logo">Spotify
+        </div>
+        <div class="home">
+            <a href=""><i class="fa-solid fa-house"></i></a>Home
+        </div>
+        <div class="search">
+            <input type="search" placeholder="Search your favourite song">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Best of I am Akshar</h1>
+        <div class="listOfBhajans">
+            <div class="bhajans">
+                <img src="Gaya Karu Goon Tara.jpg">
+                <i id="0" class="fa-solid btn fa-play"></i>
+            </div>
+            <div class="bhajans">
+                <img src="Jode Cho Maharaj.jpg">
+                <i id="1" class="fa-solid btn fa-play"></i>
+            </div>
+            <div class="bhajans">
+                <img src="Madya Hari Re.jpg">
+                <i id="2" class="fa-solid btn fa-play"></i>
+            </div>
+            <div class="bhajans">
+                <img src="Jai Jai Hari Prabodham.jpg">
+                <i id="3" class="fa-solid btn fa-play"></i>
+            </div>
+            <div class="bhajans">
+                <img src="Sambandh Taro.jpg">
+                <i id="4" class="fa-solid btn fa-play"></i>
+            </div>
+            <div class="bhajans">
+                <img src="Hari Swami Avya Re.jpg">
+                <i id="5" class="fa-solid btn fa-play"></i>
+            </div>
+            <div class="bhajans">
+                <img src="Hari Maro Jhalo Hath.jpg">
+                <i id="6" class="fa-solid btn fa-play"></i>
+            </div>
+            <div class="bhajans">
+                <img src="Kanthi Re Bandhavi.jpg">
+                <i id="7" class="fa-solid btn fa-play"></i>
+            </div>
+        </div>
+    </div>
+    <div class="playPauseSection">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <i class="fa-solid fa-backward-step" id="previous"></i>
+            <i class="fa-regular fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-forward-step" id="next"></i>
+        </div>
+        <div class="nameOfSong">
+            <img id="gif" src="Playing.gif">
+            <p id="songsInfo">Gaya Karu Gun Tara</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
