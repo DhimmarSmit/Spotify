@@ -1385,7 +1385,7 @@ nav img{
     
 }
 
-@media(max-width:415px){
+@media(max-width:413px){
     nav{
         height:10vh;
     }
@@ -1450,7 +1450,7 @@ nav img{
     }
     .nameOfSong{
         top:10px;
-        left:140px;
+        left:125px;
         font-size: 3.1vw;
     }
     .icons i{
@@ -1699,7 +1699,7 @@ nav img{
     }
     .nameOfSong{
         top:5px;
-        left:125px;
+        left:85px;
         font-size: 4.1vw;
     }
     .icons i{
@@ -1794,19 +1794,3 @@ nav img{
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
