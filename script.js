@@ -11,12 +11,10 @@ let songs = [
     {bhajanName:"Jode cho maharaj",Filepath:"2.opus"},
     {bhajanName:"Madya hari re",Filepath:"3.opus"},
     {bhajanName:"New jai jai Hariprabodham",Filepath:"4.opus"},
-    {bhajanName:"Sambandh tamaro",Filepath:"/5.opus"},
+    {bhajanName:"Sambandh tamaro",Filepath:"5.opus"},
     {bhajanName:"Hari swami avya re",Filepath:"6.opus"},
     {bhajanName:"Hari maro jhalo hath",Filepath:"7.opus"},
     {bhajanName:"Kanthi re bandhavi",Filepath:"8.opus"},
-    {bhajanName:"Kanthi re bandhavi",Filepath:"8.opus"},
-
 ]
 masterPlay.addEventListener("click", ()=>{
     if(audioElement.paused || audioElement.currentTime<=0){
